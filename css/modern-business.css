@@ -33,6 +33,15 @@ header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+
+}
+
+
+header.carousel .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header.carousel .fill {
