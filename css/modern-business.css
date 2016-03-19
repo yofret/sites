@@ -11,7 +11,7 @@ body {
     height: 100%;
 }
 
-body {
+.bodypadding {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -26,6 +26,9 @@ body {
 
 /*Nav bar */
 
+.padtop{
+    padding-top: 10px;
+}
 
 
 /* Home Page Carousel */
@@ -54,6 +57,16 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+/* imgs */
+
+.imglogo{
+    padding-left: 20%;
+}
+
+.imgdesign{
+    float: left;
 }
 
 
