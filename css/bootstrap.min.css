@@ -5036,7 +5036,7 @@
 }
 .navbar-inverse
 {
-	background-color:#ff0000;
+	background-color:#e50000;
 	
 }
 .navbar-inverse .navbar-brand
@@ -6808,8 +6808,7 @@
 .carousel-inner>.item.active.left,.carousel-inner>.item.prev
 {
 	left:0;
-	-webkit-transform:translate3d(100%,0,0);
-	transform:translate3d(100%,0,0)
+	
 }
 .carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right
 {
@@ -6821,7 +6820,7 @@
 }
 .carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev
 {
-	display:block
+	display:block;
 }
 .carousel-inner>.active
 {
@@ -6829,7 +6828,7 @@
 }
 .carousel-inner>.next,.carousel-inner>.prev
 {
-	position:absolute;
+	position:inherit;
 	top:0;
 	width:100%
 	
