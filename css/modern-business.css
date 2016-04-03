@@ -15,9 +15,7 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.img-portfolio {
-    margin-bottom: 30px;
-}
+
 
 .img-hover:hover {
     opacity: 0.8;
@@ -62,7 +60,7 @@ header.carousel .fill {
 /* imgs */
 
 .imglogo{
-    padding-left: 20%;
+    padding-left: 17%;
 }
 
 .imgdesign{
@@ -82,6 +80,9 @@ header.carousel .fill {
     box-shadow: 0px 0px 10px #888888;
 }
 
+.acolor{
+    color: #5383d3; 
+}
 /* Pricing Page Styles */
 
 .price {
@@ -103,9 +104,7 @@ header.carousel .fill {
 
 /* Footer Styles */
 
-footer {
-    margin: 50px 0;
-}
+
 
 /* Responsive Styles */
 
