@@ -1389,6 +1389,7 @@
 	display:block;
 	max-width:100%;
 	height:auto
+	margin:auto
 }
 .img-rounded
 {
@@ -5056,9 +5057,10 @@
 {
 	color:#ffffff
 }
-.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover
+.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover /* HOVER A COLOR NAV */
 {
-	color:#9d9d9d;
+	text-shadow: 0px 0px 5px #ffffff;
+	
 	background-color:transparent
 }
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover
@@ -6776,6 +6778,7 @@
 {
 	position:relative;
 	width:100%;
+
 	overflow:hidden
 }
 .carousel-inner>.item
@@ -6811,8 +6814,9 @@
 .carousel-inner>.item.active.left,.carousel-inner>.item.prev
 {
 	left:0;
-	-webkit-transform:translate3d(-100%,0,0);
+	-webkit-transform:translate3d(-100%,0%,0%);
 	transform:translate3d(-100%,0,0)
+
 }
 .carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right
 {

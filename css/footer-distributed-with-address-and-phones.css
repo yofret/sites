@@ -14,7 +14,7 @@
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: baseline;
 }
 
 /* Footer left */
@@ -49,6 +49,10 @@
 	text-decoration: none;
 	color:  inherit;
 	vertical-align: middle;
+}
+
+.footer-distributed .footer-links a:hover{
+text-shadow: 0px 0px 3px #e50000;
 }
 
 .footer-distributed .footer-company-name{

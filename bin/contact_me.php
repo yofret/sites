@@ -16,9 +16,9 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'zjeffersjc@gmail.com'; // PUT YOUR EMAIL ADDRESS HERE
+$to = 'recepcion@grupoempresarialdicon.com'; // PUT YOUR EMAIL ADDRESS HERE
 $email_subject = "FORMULARIO DE CONTACTO NUEVO:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
-$email_body = "You have received a new message from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
+$email_body = "Tu has recibido un nuevo mensaje del formulario de tu sitio web.\n\n"."Estos son los detalles:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
 $headers = "From: noreply@your-domain.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);

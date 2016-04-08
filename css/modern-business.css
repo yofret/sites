@@ -9,12 +9,17 @@
 html,
 body {
     height: 100%;
+    font-family: 'Roboto Condensed', sans-serif; 
 }
 
 .bodypadding {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.bodybg{
+    background-size: cover;
+
+}
 
 
 .img-hover:hover {
@@ -39,6 +44,7 @@ header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+    
 
 }
 
@@ -83,6 +89,10 @@ header.carousel .fill {
 .acolor{
     color: #5383d3; 
 }
+
+.divbgcolor:hover{
+    background-color: #f4f4f4;
+}
 /* Pricing Page Styles */
 
 .price {
@@ -113,6 +123,8 @@ header.carousel .fill {
     .img-related {
         margin-bottom: 30px;
     }
+    .bodybg{
+    background-size: 100% 100%;}
 }
 
 @media(max-width:767px) {
@@ -123,4 +135,7 @@ header.carousel .fill {
     header.carousel .carousel {
         height: 70%;
     }
+    .bodybg{
+    background: url(../imgs/Contenido/tramawebgrande767.png);
+    background-size: cover;}
 }
