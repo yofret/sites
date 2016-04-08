@@ -36,6 +36,11 @@ body {
 
 /* Home Page Carousel */
 
+#myCarousel {
+    position: relative;
+    margin: 0 auto;
+}
+
 header.carousel {
     height: 50%;
 }
