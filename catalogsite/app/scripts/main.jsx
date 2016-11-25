@@ -30,7 +30,9 @@
 
 		render() {
 			return (
-				<div>Hello React!!! ;)</div>
+				<div>
+					<h1>Hello React JS</h1>
+				</div>
 			);
 		}
 	}
