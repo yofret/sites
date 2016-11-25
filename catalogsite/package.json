@@ -1,0 +1,17 @@
+{
+  "name": "catalogsite",
+  "version": "1.0.0",
+  "description": "This is simple site just to learn new skills and have fun in the process",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learn",
+    "react",
+    "babel",
+    "webpack"
+  ],
+  "author": "Yofret Rios",
+  "license": "ISC"
+}
