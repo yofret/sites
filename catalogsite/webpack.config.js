@@ -16,7 +16,7 @@ module.exports = {
 				// configure loaders This basically transpile our ES6 code to ES5 old standard, Transform JSX to JS, the browser can understand everything
 				test    : /\.jsx?$/,
 				exclude : /node_modules/,
-				loaders : ["babel-loader"]
+				loaders : ["react-hot-loader/webpack", "babel-loader"]
 			},
 				// loading the index file we will require only one
 			{
