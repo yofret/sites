@@ -13,5 +13,9 @@
     "webpack"
   ],
   "author": "Yofret Rios",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
