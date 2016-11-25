@@ -9,4 +9,8 @@ Just to practice skills and share with my friends, so they can learn too
 
 ## Installation
 
-Soon
+To start, install node and npm from https://nodejs.org/en/.  and follow instruction a global installation would be perfect
+
+## Commands
+
+`npm run serve`, to start developement web server
