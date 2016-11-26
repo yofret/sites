@@ -31,6 +31,10 @@ Install dependencies
 
 `npm install`
 
+To Run
+
+`npm run serve`
+
 ## Commands
 
 `npm run serve`, to start developement web server
