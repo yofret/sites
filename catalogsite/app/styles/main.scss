@@ -1,0 +1,11 @@
+@import "libs/mixins";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	user-select: none;
+	display: flex;
+}

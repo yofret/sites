@@ -1,0 +1,17 @@
+@mixin text-overflow(){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin clearfix(){
+	overflow: auto;
+	zoom: 1;
+}
+
+@mixin centerer($rotation: 0deg) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include custom-transform(translate(-50%, -50%) rotate($rotation));
+}

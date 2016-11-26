@@ -1,6 +1,10 @@
+const path         = require('path'); // windows fix stuff?
+const precss       = require('precss');
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
-	context    : __dirname + "/app", // defining application context it will app folder created at root level
-	entry      : {
+	context    : path.resolve(__dirname, 'app'), // defining application context it will app folder created at root level
+	entry : {
 		javascript : "./scripts/app.jsx", // defining our main entry file, it will be app.js, look at it as the main class in java, or the first file in the execution
 		html       : "./index.html"
 	},
@@ -9,6 +13,8 @@ module.exports = {
 	resolve: {
 		extensions: ['', '.js', '.jsx', '.json']
 	},
+
+	devtool: 'inline-source-map', // or 'source-map'
 
 	module: {
 		loaders: [
@@ -23,8 +29,17 @@ module.exports = {
 			    test   : /\.html$/,
 			    loader : "file?name=[name].[ext]",
   			},
+  			// SASS LOADER
+  			{
+				test   : /\.scss$/,
+				loader: 'style!css?sourceMap!sass?sourceMap',
+			}
 		]
 	},
+
+	postcss() {
+    	return [autoprefixer, precss];
+  	},
 
 	output : {  // We define our ouput file, which will be bundle.js
 		path     : __dirname + "/dist",
