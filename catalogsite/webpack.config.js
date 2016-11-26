@@ -1,4 +1,5 @@
 const path         = require('path'); // windows fix stuff?
+const webpack      = require('webpack'); 
 const precss       = require('precss');
 const autoprefixer = require('autoprefixer');
 
@@ -15,6 +16,14 @@ module.exports = {
 	},
 
 	devtool: 'inline-source-map', // or 'source-map'
+
+	plugins: [
+	    new webpack.ProvidePlugin({
+	        jQuery: 'jquery',
+	        $: 'jquery',
+	        jquery: 'jquery'
+	    })
+	],
 
 	module: {
 		loaders: [
@@ -33,6 +42,14 @@ module.exports = {
   			{
 				test   : /\.scss$/,
 				loader: 'style!css?sourceMap!sass?sourceMap',
+			},
+			{ 
+				test: /\.(woff2?|ttf|eot|svg)$/, 
+				loader: 'url?limit=10000' 
+			},
+			{ 
+				test: /bootstrap\/dist\/js\/umd\//, 
+				loader: 'imports?jQuery=jquery' 
 			}
 		]
 	},
