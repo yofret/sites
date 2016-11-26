@@ -29,7 +29,7 @@ this will install webpack global dependecies
 
 Install dependencies
 
-`npm installs`
+`npm install`
 
 ## Commands
 
