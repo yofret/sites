@@ -13,6 +13,7 @@
 			return (
 				<div>
 					<h1>Hello baby</h1>
+					<img src='images/one.jpg' />
 				</div>
 			);
 		}
