@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 	import React, { Component } from 'react';
+	const one = require('./../images/one.jpg');
 
 // --------------------------------------------------
 //  React Class Component
@@ -34,6 +35,7 @@
 					<h1>Hello React JS</h1>
 					<p>Hi</p>
 					<a>Holis</a>
+					<img src={one}/>
 				</div>
 			);
 		}
