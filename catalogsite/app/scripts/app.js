@@ -11,7 +11,9 @@
 	class App extends Component {
 		render() {
 			return (
-				<div>Hello baby</div>
+				<div>
+					<h1>Hello baby</h1>
+				</div>
 			);
 		}
 	}
