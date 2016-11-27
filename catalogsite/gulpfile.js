@@ -42,7 +42,7 @@
 	gulp.task('scripts', function(){
 		return gulp.src(webpackConfig.entry)
 			.pipe($.webpack(webpackConfig))
-			.pipe(isProduction ? $.ugifly() : $.util.noop())
+			.pipe(isProduction ? $.uglify() : $.util.noop())
 			.pipe(gulp.dest(dist + 'js/'))
 			.pipe($.size({ title : 'js' }))
 			.pipe($.connect.reload());
@@ -64,7 +64,8 @@
 	gulp.task('sass', function(){
 		return gulp.src(app + 'styles/**/*.{scss,sass}')
 			.pipe($.sass.sync().on('error', $.sass.logError))
-			.pipe($.autoprefixer({browsers: autoprefixerBrowsers})) 
+			.pipe($.autoprefixer({browsers: autoprefixerBrowsers}))
+			.pipe(isProduction ? $.sass({outputStyle: 'compressed'}) : $.sass({outputStyle: 'expanded'})) 
 			.pipe(gulp.dest(dist + 'styles/'))
 			.pipe($.size({ title : 'css' }))
 			.pipe($.connect.reload());
