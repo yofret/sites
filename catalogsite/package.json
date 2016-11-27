@@ -4,7 +4,7 @@
   "description": "This is simple site just to learn new skills and have fun in the process",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/webpack/bin/webpack.js",
     "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --history-api-fallback"
   },
   "keywords": [
