@@ -2,7 +2,7 @@ module.exports.getConfig = function(type) {
 	var isDev = type === 'development';
 
 	var config = {
-		entry: './app/scripts/app.jsx',
+		entry: './app/scripts/main.js',
 		output: {
 			path: __dirname,
 			filename : 'bundle.js'
@@ -12,9 +12,9 @@ module.exports.getConfig = function(type) {
 			loaders:[{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: babel,
+				loader: 'babel',
 				query: {
-					preset: ['react', 'es2015']
+					presets: ['react', 'es2015']
 				}
 			}]
 		}

@@ -61,7 +61,14 @@
 //--------------------------------------------------------------
 // Styles
 //--------------------------------------------------------------
-// TODO
+	gulp.task('sass', function(){
+		return gulp.src(app + 'styles/**/*.{scss,sass}')
+			.pipe($.sass.sync().on('error', $.sass.logError))
+			.pipe($.autoprefixer({browsers: autoprefixerBrowsers})) 
+			.pipe(gulp.dest(dist + 'styles/'))
+			.pipe($.size({ title : 'css' }))
+			.pipe($.connect.reload());
+	})
 
 
 //--------------------------------------------------------------
@@ -78,8 +85,9 @@
 //--------------------------------------------------------------
 	gulp.task('watch', function(){
 		gulp.watch(app + 'index.html',['html']);
-		gulp.watch(app + 'scripts/**/*.js',);
-		gulp.watch();
+		gulp.watch(app + 'styles/**/*.scss', ['sass']);
+		gulp.watch(app + 'scripts/**/*.js', ['scripts']);
+		gulp.watch(app + 'scripts/**/*.jsx', ['scripts']);
 	})
 
 //--------------------------------------------------------------
@@ -107,14 +115,14 @@
 //--------------------------------------------------------------
 // Serve task
 //--------------------------------------------------------------
-	gulp.task('serve', ['images','html','scripts','server','watch'])
+	gulp.task('serve', ['images','html','scripts', 'sass', 'server','watch'])
 
 //--------------------------------------------------------------
 // Generate distribution
 //--------------------------------------------------------------
 
 	gulp.task('build', ['clean'], function(){
-		gulp.start(['images','html','scripts'])
+		gulp.start(['images','html','scripts', 'sass'])
 	})
 
 //--------------------------------------------------------------

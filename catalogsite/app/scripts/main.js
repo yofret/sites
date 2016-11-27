@@ -1,16 +1,13 @@
 //--------------------------------------------------------------
 // Dependecies
 //--------------------------------------------------------------
-import React, { Component } from 'react';
+
+	import React from 'react'
+	import ReactDOM from 'react-dom';
+	import app from './app';
 
 //--------------------------------------------------------------
-// Class definition
+// Render app
 //--------------------------------------------------------------
 
-export class main extends Component {
-	render() {
-		return (
-			<div>Hello baby</div>
-		);
-	}
-}
+	ReactDOM.render(<app/>, document.getElementById('app'));
