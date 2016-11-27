@@ -69,7 +69,14 @@
 			.pipe($.size({ title : 'css' }))
 			.pipe($.connect.reload());
 	})
-
+//--------------------------------------------------------------
+// Fonts
+//--------------------------------------------------------------
+	gulp.task('fonts', function(){
+		return gulp.src(app + 'styles/fonts/**/*.{ttf, woff, eot, svg}')
+			.pipe($.size({ tittle: 'fonts' }))
+			.pipe(gulp.dest(dist + 'styles/fonts/'))
+	});
 
 //--------------------------------------------------------------
 // Images
@@ -115,14 +122,14 @@
 //--------------------------------------------------------------
 // Serve task
 //--------------------------------------------------------------
-	gulp.task('serve', ['images','html','scripts', 'sass', 'server','watch'])
+	gulp.task('serve', ['images','html','scripts', 'sass', 'fonts','server','watch'])
 
 //--------------------------------------------------------------
 // Generate distribution
 //--------------------------------------------------------------
 
 	gulp.task('build', ['clean'], function(){
-		gulp.start(['images','html','scripts', 'sass'])
+		gulp.start(['images','html','scripts', 'sass', 'fonts'])
 	})
 
 //--------------------------------------------------------------

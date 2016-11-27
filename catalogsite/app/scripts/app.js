@@ -8,7 +8,7 @@
 // Class definition
 //--------------------------------------------------------------
 
-	class app extends Component {
+	class App extends Component {
 		render() {
 			return (
 				<div>Hello baby</div>
@@ -17,4 +17,4 @@
 	}
 
 
-	export default app;
+	export default App;

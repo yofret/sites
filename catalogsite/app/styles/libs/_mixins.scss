@@ -1,0 +1,9 @@
+@mixin flexbox($direction: column, $align: left) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align;
+}
+
+@mixin flex($values){
+	flex: $values;
+}
