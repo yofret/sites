@@ -9,20 +9,20 @@ Just to practice skills and share with my friends, so they can learn too
 
 ## Installation
 
-1. install bower and gulp if you don't have it
+1). install bower and gulp if you don't have it
 
 ```
 $ npm install --global gulp-cli
 $ npm install -g bower
 ```
 
-2. install npm dependencies
+2). install npm dependencies
 
 ```
 $ npm install
 ```
 
-3. install bower dependencies
+3). install bower dependencies
 
 ```
 $ bower install
