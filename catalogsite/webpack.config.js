@@ -14,6 +14,7 @@ module.exports.getConfig = function(type) {
 				exclude: /node_modules/,
 				loader: 'babel',
 				query: {
+					compact: false,
 					presets: ['react', 'es2015']
 				}
 			}]
