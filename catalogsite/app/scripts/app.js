@@ -30,7 +30,6 @@
 			this.startCarousel();
 			this.startNavigation();
 			this.startWow();
-			// console.log($());
 		}
 
 		// Functions
@@ -76,6 +75,7 @@
 				<div>
 					<h1>Hello baby</h1>
 					<img src='images/one.jpg' />
+					<i className="fa fa-glass"></i>
 				</div>
 			);
 		}

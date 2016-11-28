@@ -108,7 +108,7 @@
 // Fonts
 //--------------------------------------------------------------
     gulp.task('fonts', function(){
-        return gulp.src(app + 'styles/fonts/**/*.{ttf, woff, eot, svg}')
+        return gulp.src(app + 'styles/fonts/**/*.{ttf, woff, woff2, eot, svg}')
             .pipe($.size({ tittle: 'fonts' }))
             .pipe(gulp.dest(dist + 'styles/fonts/'))
     });
