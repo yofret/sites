@@ -1,4 +1,5 @@
 //--------------------------------------------------------------
 // JS bower dependecies
 //--------------------------------------------------------------
-window.$ = window.jQuery = require('./../../bower_components/jquery/dist/jquery');
+window.moment = require('./../../bower_components/moment/moment');
+window._      = require('./../../bower_components/underscore/underscore');

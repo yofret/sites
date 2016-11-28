@@ -72,7 +72,7 @@
                             './dist/fonts/*.*'
                         ]
                     },
-                    jquery: { ignore: true },
+                    jquery: { main: ['./jquery.min.js'] },
                     moment: { ignore: true },
                     underscore: { ignore: true }
                 }
