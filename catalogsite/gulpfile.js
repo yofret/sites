@@ -63,11 +63,9 @@
                             './dist/fonts/*.*'
                         ]
                     },
-                    jquery: {
-                        main: [
-                            './dist/jquery.min.js',
-                        ]
-                    }
+                    jquery: { ignore: true },
+                    moment: { ignore: true },
+                    underscore: { ignore: true }
                 }
             }))
             .pipe(gulp.dest(dist + 'libs'))
