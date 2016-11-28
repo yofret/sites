@@ -16,7 +16,7 @@
 //--------------------------------------------------------------
 // Directories and port
 //--------------------------------------------------------------
-	var port = $.util.env.port || 1337;
+	var port = $.util.env.port || 8080;
 	var app  = 'app/';
 	var dist = 'dist/';
 
@@ -74,7 +74,7 @@
 // Fonts
 //--------------------------------------------------------------
 	gulp.task('fonts', function(){
-		return gulp.src(app + 'styles/fonts/**/*.{ttf, woff, eot, svg}')
+		return gulp.src(app + 'styles/fonts/**/*.{ttf,woff,woff2,eot,svg}')
 			.pipe($.size({ tittle: 'fonts' }))
 			.pipe(gulp.dest(dist + 'styles/fonts/'))
 	});
