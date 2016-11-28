@@ -17,7 +17,7 @@
 //--------------------------------------------------------------
 // Directories and port
 //--------------------------------------------------------------
-    var port = $.util.env.port || 1337;
+    var port = $.util.env.port || 8080;
     var app  = 'app/';
     var dist = 'dist/';
 
@@ -47,6 +47,15 @@
             .pipe($.size({ title : 'js' }))
             .pipe($.connect.reload());
     })
+
+//--------------------------------------------------------------
+// Scripts
+//--------------------------------------------------------------
+	gulp.task('js_required', function (event) {
+		return gulp.src(app + 'libs/required/**/*.js')
+				.pipe(isProduction ? $.uglify() : $.util.noop())
+				.pipe(gulp.dest(dist + 'js')); 
+	});
 
 //--------------------------------------------------------------
 // Adding bower_components
@@ -148,14 +157,14 @@
 //--------------------------------------------------------------
 // Serve task
 //--------------------------------------------------------------
-    gulp.task('serve', ['images','html','scripts', 'sass', 'fonts', 'bower','server','watch'])
+    gulp.task('serve', ['images','html','scripts', 'js_required','sass', 'fonts', 'bower','server','watch'])
 
 //--------------------------------------------------------------
 // Generate distribution
 //--------------------------------------------------------------
 
     gulp.task('build', ['clean'], function(){
-        gulp.start(['images','html','scripts', 'sass', 'fonts', 'bower'])
+        gulp.start(['images','html','scripts', 'js_required','sass', 'fonts', 'bower'])
     })
 
 //--------------------------------------------------------------

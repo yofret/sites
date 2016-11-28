@@ -1,9 +1,10 @@
 //--------------------------------------------------------------
-// Fonts
+// libs
 //--------------------------------------------------------------
 
 @import 'libs/reset';
 @import 'libs/mixins';
+@import 'libs/owl.carousel';
 
 //--------------------------------------------------------------
 // Fonts
@@ -19,7 +20,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	font-family: 'TwCenMT-Regular', sans-serif;
 }
 
 #app {

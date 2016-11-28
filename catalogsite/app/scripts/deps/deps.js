@@ -1,4 +1,4 @@
 //--------------------------------------------------------------
 // JS bower dependecies
 //--------------------------------------------------------------
-window.$ = require('./../../bower_components/jquery/dist/jquery');
+window.$ = window.jQuery = require('./../../bower_components/jquery/dist/jquery');
