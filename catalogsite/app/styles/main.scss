@@ -26,10 +26,38 @@ html, body {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	@include flexbox();
+}
 
-	h1 {
+.wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+	.title, .desc {
+		padding-top: 2rem;
+		font-size: 4rem;
+		max-width: 600px;
+		margin: auto;
+	}
+
+	.desc {
 		font-size: 2rem;
+		color: gray;
+	}
+}
+
+.image-wrapper {
+	display: inline-block;
+	margin-top: 1rem;
+	overflow: hidden;
+	@include border-radius(100%);
+	width: 128px;
+	height: 128px;
+
+	img {
+		width: 128px;
+		height: 128px;
 	}
 }
 

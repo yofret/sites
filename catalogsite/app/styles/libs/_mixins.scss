@@ -1,3 +1,7 @@
+// 
+// FlexBox Mixin
+//
+
 @mixin flexbox($direction: column, $align: left) {
 	display: flex;
 	flex-direction: $direction;
@@ -7,3 +11,8 @@
 @mixin flex($values){
 	flex: $values;
 }
+
+@mixin border-radius($property){
+	border-radius: $property;
+}
+
