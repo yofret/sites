@@ -123,7 +123,9 @@
 //--------------------------------------------------------------
 // Serve task
 //--------------------------------------------------------------
-	gulp.task('serve', ['images','html','scripts', 'sass', 'fonts','server','watch'])
+	gulp.task('serve', ['clean'], function(){
+		gulp.start(['images','html','scripts', 'sass', 'fonts','server','watch'])
+	})
 
 //--------------------------------------------------------------
 // Generate distribution

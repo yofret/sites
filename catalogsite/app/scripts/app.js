@@ -15,7 +15,7 @@
 					<h1 className='title'>Ready for this stuff</h1>
 					<p className='desc'>
 						Gulp + Webpack + React Boilerplate <br/>
-						is up to you whats next....
+						what's next?.... is up to you
 					</p>
 					<div className='image-wrapper'>
 						<img src='images/one.jpg' />
