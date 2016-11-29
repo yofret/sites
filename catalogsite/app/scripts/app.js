@@ -6,6 +6,8 @@
     import Header from './header/header';
     import Navigation from './header/navigation';
     import Slider from './slider/slider';
+    import About from './content/about';
+    import Blog from './blog/blog';
 
 //--------------------------------------------------------------
 // Class definition
@@ -38,9 +40,11 @@
         render() {
             return (
                 <div id='wrapper'>
-                    <Header/>
-                    <Navigation/>
-                    <Slider/>
+                    <Header />
+                    <Navigation />
+                    <Slider />
+                    <About />
+                    <Blog />
                 </div>
             );
         }
