@@ -50,7 +50,7 @@
                                     <ul>
                                         {this.renderProducts()}
                                     </ul>
-                                    <a className="btn btn-default btn-more-info wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="#" role="button">More Info</a>
+                                    <a className="btn btn-default btn-more-info wow bounceIn" data-wow-duration="500ms" data-wow-delay="250ms" href="#" role="button">More Info</a>
                                 </div>
                             </div>
                         </div>
